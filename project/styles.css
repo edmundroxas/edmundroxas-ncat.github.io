@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: mintcream;
+}
+
+/* Header: Styles for the header on the website.
+This element is crucial for marketing new offers and announcements.
+The styles defined below target:
+- Background color: Sets a green background, which is visually
+appealing and grabs user attention.
+- Color: Sets the text color to white for contrast against the light blue
+Background.
+- Padding: Removes padding to allow logo to fit
+- Font size: Increases the font size to 1.5em to make the announcement more
+readable.
+*/
+header {
+    background: forestgreen;
+    color: white;
+    padding: 0; /* Remove padding to allow logo to fit */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #333;
+}
+
+.logo img {
+    width: 100%; /* Make the logo fill the entire header */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+
+/* Footer Styles */
+footer {
+    background: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #007bff;
+}
+
+.social-media {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: flex; /* Align items in a row */
+}
+
+.social-media li {
+    margin: 0 10px; /* Spacing between icons */
+}
+
+.social-media a {
+    font-size: 24px; /* Icon size */
+    color: #333; /* Icon color */
+    text-decoration: none; /* Remove underline */
+}
+
+.social-media a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.footer-socials {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: flex; /* Align items in a row */
+    justify-content: center; /* Center align the icons */
+    margin-top: 10px; /* Add some space above the icons */
+}
+
+.footer-socials li {
+    margin: 0 10px; /* Spacing between icons */
+}
+
+.footer-socials a {
+    font-size: 20px; /* Icon size */
+    color: #333; /* Icon color */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-socials a:hover {
+    color: #007bff; /* Change color on hover */
+}
