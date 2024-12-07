@@ -58,6 +58,12 @@ main {
     padding: 20px;
 }
 
+/* Slideshow Styles*/
+img.cycle-slideshow {
+    height: 500px;
+    width: auto;
+}
+
 
 /* Footer Styles */
 footer {
