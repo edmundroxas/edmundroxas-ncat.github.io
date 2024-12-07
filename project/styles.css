@@ -59,7 +59,7 @@ main {
 }
 
 /* Slideshow Styles*/
-img.cycle-slideshow {
+.cycle-slideshow > img {
     height: 500px;
     width: auto;
 }
