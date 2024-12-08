@@ -58,17 +58,18 @@ main {
     /* adding display styling -AC*/
     display: grid;
     grid-template-columns: auto auto;
+    grid-template-areas: "welcome slideshow";
     padding: 20px;
 }
 
 /* welcome styles -AC*/
 .welcome {
-    position: left;
+    grid-area: welcome;
 }
 
 /* slideshow div styles -AC*/
 .cycle-slideshow {
-    position: right;
+    grid-area: slideshow;
 }
 
 /* slideshow img Styles -AC*/
