@@ -75,12 +75,12 @@ main {
 
 .slideshow {
     text-align: center;
+    margin: auto;
 }
 
 /* cycle-slideshow styles -AC*/
 .cycle-slideshow {
     grid-area: slideshow;
-    margin: auto;
 }
 
 /* slideshow img Styles -AC*/
