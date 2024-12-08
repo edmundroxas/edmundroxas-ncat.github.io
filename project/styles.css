@@ -63,8 +63,8 @@ main {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-areas:
-        "welcome slideshow"
         "welcome slideshow";
+        /*"welcome slideshow";*/
     align-content: start;
 }
 
