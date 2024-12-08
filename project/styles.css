@@ -79,7 +79,7 @@ main {
 
 .slideshowText {
     grid-area: slideshowText;
-    text-align: bottom;
+    vertical-align: bottom;
 }
 
 /* slideshow div styles -AC*/
