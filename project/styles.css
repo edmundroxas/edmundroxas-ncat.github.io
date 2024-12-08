@@ -79,7 +79,8 @@ main {
 
 .slideshowText {
     grid-area: slideshowText;
-    vertical-align: bottom;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* slideshow div styles -AC*/
