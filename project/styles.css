@@ -81,6 +81,10 @@ main {
     grid-area: slideshowText;
 }
 
+.slideshowText p {
+    margin-top: 50%;
+}
+
 /* slideshow div styles -AC*/
 .cycle-slideshow {
     grid-area: slideshow;
