@@ -63,7 +63,8 @@ main {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-areas: 
-        "welcome slideshowText"
+        /*"welcome slideshowText"*/
+        "welcome slideshow"
         "image slideshow";
     align-content: start;
 }
@@ -78,9 +79,12 @@ main {
 }
 
 .slideshowText {
+    /*
     grid-area: slideshowText;
     display: flex;
     margin-bottom: auto;
+    */
+    grid-area: slideshow;
 }
 
 /* slideshow div styles -AC*/
