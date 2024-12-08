@@ -80,7 +80,7 @@ main {
 .slideshowText {
     grid-area: slideshowText;
     display: flex;
-    justify-content: flex-end;
+    margin-bottom: auto;
 }
 
 /* slideshow div styles -AC*/
