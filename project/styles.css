@@ -59,6 +59,8 @@ main {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-areas: "welcome slideshow";
+    align-content: center;
+    /* end of added display styling -AC*/
     padding: 20px;
 }
 
