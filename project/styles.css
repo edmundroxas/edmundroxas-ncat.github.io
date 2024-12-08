@@ -75,7 +75,7 @@ main {
 }
 
 .slideshowText {
-    grid-area: slideshow;
+    grid-area: slideshowText;
 }
 
 /* slideshow div styles -AC*/
