@@ -81,6 +81,11 @@ main {
     grid-area: slideshowText;
 }
 
+.slideshowText > p {
+    position: absolute;
+    bottom: 0;
+}
+
 /* slideshow div styles -AC*/
 .cycle-slideshow {
     grid-area: slideshow;
