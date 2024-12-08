@@ -55,20 +55,22 @@ nav a {
 
 /* Main Content Styles */
 main {
+    /* adding display styling -AC*/
+    display: inline;
     padding: 20px;
 }
 
-/* welcome styles*/
+/* welcome styles -AC*/
 .welcome {
     position: left;
 }
 
-/* slideshow div styles*/
+/* slideshow div styles -AC*/
 .cycle-slideshow {
     position: right;
 }
 
-/* slideshow img Styles*/
+/* slideshow img Styles -AC*/
 .cycle-slideshow img {
     height: 500px;
     width: auto;
