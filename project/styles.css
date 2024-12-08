@@ -58,7 +58,10 @@ main {
     /* adding display styling -AC*/
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-areas: "welcome slideshow";
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "welcome slideshow-text"
+        "image slideshow";
     align-content: space-around;
     /* end of added display styling -AC*/
     padding: 20px;
