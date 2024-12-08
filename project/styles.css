@@ -79,10 +79,7 @@ main {
 
 .slideshowText {
     grid-area: slideshowText;
-}
-
-.slideshowText > p {
-    top: 50%;
+    text-align: bottom;
 }
 
 /* slideshow div styles -AC*/
