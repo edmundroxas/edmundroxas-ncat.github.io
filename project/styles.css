@@ -74,6 +74,10 @@ main {
     grid-area: welcome;
 }
 
+.slideshowText {
+    grid-area: slideshow;
+}
+
 /* slideshow div styles -AC*/
 .cycle-slideshow {
     grid-area: slideshow;
