@@ -73,15 +73,11 @@ main {
     grid-area: welcome;
 }
 
-.image {
-    grid-area: image;
+.slideshow {
+    text-align: center;
 }
 
-.slideshowText {
-    grid-area: slideshow;
-}
-
-/* slideshow div styles -AC*/
+/* cycle-slideshow styles -AC*/
 .cycle-slideshow {
     grid-area: slideshow;
 }
