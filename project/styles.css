@@ -81,6 +81,7 @@ main {
 .cycle-slideshow img {
     height: 350px;
     width: auto;
+    align-content: center;
 }
 
 /* Footer Styles */
