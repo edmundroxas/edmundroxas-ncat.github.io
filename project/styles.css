@@ -81,8 +81,8 @@ main {
     grid-area: slideshowText;
 }
 
-.slideshowText p {
-    margin-top: 50%;
+.slideshowText > p {
+    top: 50%;
 }
 
 /* slideshow div styles -AC*/
