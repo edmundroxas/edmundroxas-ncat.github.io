@@ -59,6 +59,7 @@ main {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-areas: "welcome slideshow";
+    align-content: space-around;
     /* end of added display styling -AC*/
     padding: 20px;
 }
@@ -66,13 +67,11 @@ main {
 /* welcome styles -AC*/
 .welcome {
     grid-area: welcome;
-    align-content: center;
 }
 
 /* slideshow div styles -AC*/
 .cycle-slideshow {
     grid-area: slideshow;
-    align-content: center;
 }
 
 /* slideshow img Styles -AC*/
