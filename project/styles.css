@@ -58,12 +58,21 @@ main {
     padding: 20px;
 }
 
-/* Slideshow Styles*/
+/* welcome styles*/
+.welcome {
+    position: left;
+}
+
+/* slideshow div styles*/
+.cycle-slideshow {
+    position: right;
+}
+
+/* slideshow img Styles*/
 .cycle-slideshow img {
     height: 500px;
     width: auto;
 }
-
 
 /* Footer Styles */
 footer {
