@@ -56,7 +56,8 @@ nav a {
 /* Main Content Styles */
 main {
     /* adding display styling -AC*/
-    display: inline;
+    display: grid;
+    grid-template-columns: auto auto;
     padding: 20px;
 }
 
