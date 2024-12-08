@@ -62,8 +62,10 @@ main {
 .homeContainer {
     display: grid;
     grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     grid-template-areas: 
-        "welcome slideshow";
+        "welcome slideshowText"
+        "image slideshow;
     align-content: space-around;
 }
 
