@@ -62,8 +62,7 @@ main {
 .homeContainer {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-areas: 
-        /*"welcome slideshowText"*/
+    grid-template-areas:
         "welcome slideshow"
         "welcome slideshow";
     align-content: start;
@@ -79,11 +78,6 @@ main {
 }
 
 .slideshowText {
-    /*
-    grid-area: slideshowText;
-    display: flex;
-    margin-bottom: auto;
-    */
     grid-area: slideshow;
 }
 
