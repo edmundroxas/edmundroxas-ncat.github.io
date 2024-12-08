@@ -55,14 +55,16 @@ nav a {
 
 /* Main Content Styles */
 main {
-    /* adding display styling -AC*/
+    padding: 20px;
+}
+
+/* adding display styling -AC*/
+.homeContainer {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-areas: 
         "welcome slideshow";
     align-content: space-around;
-    /* end of added display styling -AC*/
-    padding: 20px;
 }
 
 /* welcome styles -AC*/
