@@ -73,7 +73,7 @@ main {
     grid-area: welcome;
 }
 
-.welcome img {
+.image {
     grid-area: image;
 }
 
