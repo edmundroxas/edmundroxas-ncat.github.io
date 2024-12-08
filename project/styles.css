@@ -74,6 +74,10 @@ main {
     grid-area: welcome;
 }
 
+.welcome img {
+    grid-area: image;
+}
+
 .slideshowText {
     grid-area: slideshowText;
 }
