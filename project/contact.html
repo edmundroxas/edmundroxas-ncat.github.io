@@ -24,8 +24,6 @@
     
     <!-- Ref JS file -->
     <script src="javacraft.js"></script>
-
-    <div id="responseMessage"></div>
     
 </head>
 <body>
@@ -64,13 +62,14 @@
             <input type="email" id="email" name="email" required class="input">
             
             <!-- adding datepicker -AC -->
-            <label for="date" class="label">Date:</label>
+            <label for="datepicker" class="label">Date:</label>
             <input type="text" id="datepicker" required class="input">
 
             <!-- end -AC -->
             <label for="message" class="label">Message:</label>
             <textarea id="message" name="message" required class="input"></textarea>
             <button type="submit" class="submit">Send</button>
+            <div id="responseMessage"></div>
         </form>
             
     </main>
