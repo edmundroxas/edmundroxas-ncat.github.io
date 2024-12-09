@@ -73,8 +73,8 @@ main {
     grid-area: welcome;
 }
 
+/* slideshow styles - AC*/
 .slideshow {
-    align-content: center;
     margin: auto;
 }
 
@@ -87,7 +87,8 @@ main {
 .cycle-slideshow img {
     height: 250px;
     width: auto;
-    align-content: center;
+    /*align-content: center;*/
+    margin: auto;
 }
 
 /* Footer Styles */
