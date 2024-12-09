@@ -1,6 +1,17 @@
 $(document).ready(function() {
-    console.log("javacraft.js is loaded");
+    console.log("javacraft.js is running");
 
+    // Check if jQuery is available
+    if (typeof $ === 'undefined') {
+        console.error("jQuery is not loaded!");
+        return;
+    }
+    
+    // Check if Cycle2 is available
+    if (typeof $.fn.cycle === 'undefined') {
+        console.error("Cycle2 plugin is not loaded!");
+        return;
+    }
     // Slideshow toggle for Cycle2
     let $slideshow = $(".cycle-slideshow");
     
