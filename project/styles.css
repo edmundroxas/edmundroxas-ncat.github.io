@@ -101,11 +101,7 @@ main {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-areas:
-        "label field"
-        "label field"
-        "label field"
-        "label field"
-        "submit submit";
+        "label field";
 }
 
 .label {
