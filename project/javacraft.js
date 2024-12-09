@@ -1,13 +1,14 @@
-$(document).ready(function() {
-    
+$(document).ready(function () {
     var javacraftLoaded = true; //variable to show that this file has loaded
     console.log("javacraft.js is loaded");
+    
     // Check if javacraftLoaded variable is defined (meaning javacraft.js is loaded)
     if (typeof javacraftLoaded !== 'undefined' && javacraftLoaded === true) {
         console.log("javacraft.js is loaded successfully!");
     } else {
         console.error("javacraft.js is not loaded.");
     }
+    
     // Check if jQuery is available
     if (typeof $ === 'undefined') {
         console.error("jQuery is not loaded!");
@@ -19,6 +20,7 @@ $(document).ready(function() {
         console.error("Cycle2 plugin is not loaded!");
         return;
     }
+
     // Slideshow toggle for Cycle2
     let $slideshow = $(".cycle-slideshow");
     
@@ -68,12 +70,10 @@ $(document).ready(function() {
     // Plain JavaScript click event handler for logo
     $('#logo').click(function() {
         alert('Logo clicked!');
-$(document).ready(function () {
-    // Add datepicker functionality
-    $("#datepicker").datepicker();
+    });
 
     // Handle form submission
-    $(".Form").on("submit", function (e) {
+    $("#contactForm").on("submit", function (e) {
         e.preventDefault(); // Prevent form from submitting normally
 
         // Gather form data
@@ -84,28 +84,25 @@ $(document).ready(function () {
             message: $("#message").val(),
         };
 
-        // AJAX request to an external API
+        // Send AJAX request to a placeholder external API
         $.ajax({
-            url: "https://jsonplaceholder.typicode.com/posts", // Mock external API
-            type: "POST",
+            url: "https://jsonplaceholder.typicode.com/posts", // Replace with your external API endpoint
+            type: "POST", // POST for sending data
             data: JSON.stringify(formData),
             contentType: "application/json",
             success: function (response) {
-                // Display success message on the page
-                $("main").append(
-                    `<div id="responseMessage">
-                        <p>Thank you, ${formData.name}. Your message was sent successfully!</p>
-                        <p>Response ID: ${response.id}</p>
-                    </div>`
+                // Update the page with the response
+                $("#responseMessage").html(
+                    `<p>Thank you, ${formData.name}. Your message was sent successfully!</p>
+                     <p>Response ID: ${response.id}</p>`
                 );
             },
             error: function () {
-                // Display error message on the page
-                $("main").append(
-                    `<div id="responseMessage">
-                        <p>There was an error sending your message. Please try again later.</p>
-                    </div>`
+                // Handle errors
+                $("#responseMessage").html(
+                    "<p>There was an error sending your message. Please try again later.</p>"
                 );
             },
         });
     });
+}); // Closing the initial $(document).ready()
