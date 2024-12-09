@@ -6,6 +6,9 @@ $slideshow.on("click", function() {
    else
       $slideshow.cycle("pause");
 });
+
+$("#datepicker").datepicker();
+
 $(document).ready(function() {
             // Add event listeners using jQuery
             $('#homeLink').click(function(event) {
