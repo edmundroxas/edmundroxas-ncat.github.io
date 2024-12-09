@@ -97,111 +97,11 @@ main {
 }
 
 /* form Styles -AC*/
-/* Ensures form elements are spaced correctly */
-/* Reset margins and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Apply consistent styles to the form container */
 .form {
-    display: flex;
-    flex-direction: column;
-    width: 300px; /* Adjust form width */
-    margin: 0 auto; /* Center the form */
-}
-
-/* Style labels */
-label {
-    font-size: 1rem;
-    margin-bottom: 5px; /* Space between label and input */
-    font-weight: bold; /* Optional: makes labels bold */
-}
-
-/* Style inputs and textareas */
-input, textarea {
-    padding: 8px;
-    font-size: 1rem;
-    width: 100%; /* Make inputs take up full width */
-    margin-bottom: 10px; /* Space between inputs */
-    margin-top: 0; /* Ensure no extra space on top */
-    border: 1px solid #ccc; /* Add border for inputs */
-    border-radius: 4px; /* Rounded corners for inputs */
-}
-
-/* Style textarea specifically for consistent height */
-textarea {
-    resize: vertical; /* Allow vertical resizing only */
-    min-height: 100px; /* Minimum height for textarea */
-}
-
-/* Style button */
-button {
-    padding: 10px;
-    font-size: 1rem;
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-/* Ensure the input field for the datepicker looks like a text input */
-#datepicker {
-    padding: 8px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;  /* Make sure the date input takes up full width of its container */
-}
-
-/* Datepicker popup styling */
-.ui-datepicker {
-    font-size: 0.9rem;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    padding: 10px;
-}
-
-/* Style the individual day buttons in the date picker */
-.ui-datepicker td a {
-    display: block;
-    padding: 5px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-}
-
-/* Highlight selected date */
-.ui-datepicker .ui-state-highlight {
-    background-color: #4CAF50;  /* Green background for selected date */
-    color: white;
-}
-
-/* Change hover color for datepicker days */
-.ui-datepicker td a.ui-state-hover {
-    background-color: #f0f0f0;
-    color: #333;
-}
-
-/* Style for the navigation buttons (prev/next) in the datepicker */
-.ui-datepicker-prev, .ui-datepicker-next {
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 5px;
-    cursor: pointer;
-}
-
-.ui-datepicker-prev:hover, .ui-datepicker-next:hover {
-    background-color: #e0e0e0;
-}
-
-button:hover {
-    background-color: #45a049;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+        "label field";
 }
 
 
