@@ -175,3 +175,10 @@ footer a {
 .footer-socials a:hover {
     color: #007bff; /* Change color on hover */
 }
+#responseMessage {
+    display: block !important;
+    visibility: visible !important;
+    padding: 10px;
+    margin-top: 20px;
+}
+
