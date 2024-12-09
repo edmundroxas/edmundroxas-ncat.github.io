@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    console.log("javacraft.js is loaded");
+
     // Slideshow toggle for Cycle2
     let $slideshow = $(".cycle-slideshow");
     
