@@ -96,7 +96,7 @@ main {
     margin: auto;
 }
 
-/* form Styles -AC*/
+/* all form Styles -AC*/
 .form {
     display: grid;
     grid-template-columns: auto auto;
@@ -104,12 +104,36 @@ main {
         "label field";
 }
 
-.label {
-    grid-area: label; 
+.labelName {
+    grid-area: labelName; 
 }
 
-.input {
-    grid-area: input;
+.inputName {
+    grid-area: inputName;
+}
+
+.labelEmail {
+    grid-area: labelEmail; 
+}
+
+.inputEmail {
+    grid-area: inputEmail;
+}
+
+.labelDate {
+    grid-area: labelDate; 
+}
+
+.inputDate {
+    grid-area: inputDate;
+}
+
+.labelMessage {
+    grid-area: labelMessage; 
+}
+
+.inputMessage {
+    grid-area: inputMessage;
 }
 
 .submit {
