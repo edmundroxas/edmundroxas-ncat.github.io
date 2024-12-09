@@ -98,26 +98,46 @@ main {
 
 /* form Styles -AC*/
 /* Ensures form elements are spaced correctly */
-.form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;  /* Adjust form width */
-    margin: 0 auto; /* Center the form */
-}
-
-label {
-    font-size: 1rem;
-    margin-bottom: 5px; /* Space between label and input */
-}
-
-input, textarea {
-    padding: 8px;
-    font-size: 1rem;
-    width: 100%;
-    margin-bottom: 15px; /* Space between inputs */
+/* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+/* Apply consistent styles to the form container */
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Adjust form width */
+    margin: 0 auto; /* Center the form */
+}
+
+/* Style labels */
+label {
+    font-size: 1rem;
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Optional: makes labels bold */
+}
+
+/* Style inputs and textareas */
+input, textarea {
+    padding: 8px;
+    font-size: 1rem;
+    width: 100%; /* Make inputs take up full width */
+    margin-bottom: 10px; /* Space between inputs */
+    margin-top: 0; /* Ensure no extra space on top */
+    border: 1px solid #ccc; /* Add border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+}
+
+/* Style textarea specifically for consistent height */
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; /* Minimum height for textarea */
+}
+
+/* Style button */
 button {
     padding: 10px;
     font-size: 1rem;
@@ -131,6 +151,7 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
 
 
 /* Footer Styles */
