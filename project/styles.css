@@ -64,9 +64,9 @@ main {
     grid-template-columns: auto auto;
     grid-template-areas:
         "welcome slideshow";
-        /*"welcome slideshow";*/
     align-content: start;
 }
+/*possibly need to isolate text and situated slideshow and image below*/
 
 /* welcome styles -AC*/
 .welcome {
