@@ -147,6 +147,58 @@ button {
     border: none;
     cursor: pointer;
 }
+/* Ensure the input field for the datepicker looks like a text input */
+#datepicker {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;  /* Make sure the date input takes up full width of its container */
+}
+
+/* Datepicker popup styling */
+.ui-datepicker {
+    font-size: 0.9rem;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 10px;
+}
+
+/* Style the individual day buttons in the date picker */
+.ui-datepicker td a {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Highlight selected date */
+.ui-datepicker .ui-state-highlight {
+    background-color: #4CAF50;  /* Green background for selected date */
+    color: white;
+}
+
+/* Change hover color for datepicker days */
+.ui-datepicker td a.ui-state-hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Style for the navigation buttons (prev/next) in the datepicker */
+.ui-datepicker-prev, .ui-datepicker-next {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.ui-datepicker-prev:hover, .ui-datepicker-next:hover {
+    background-color: #e0e0e0;
+}
 
 button:hover {
     background-color: #45a049;
