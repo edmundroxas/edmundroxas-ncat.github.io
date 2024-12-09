@@ -103,6 +103,9 @@ $(document).ready(function () {
                     "<p>There was an error sending your message. Please try again later.</p>"
                 );
             },
+            complete: function () {
+        console.log("Request complete");
+    }
         });
     });
 }); // Closing the initial $(document).ready()
