@@ -73,7 +73,7 @@ $(document).ready(function () {
     $("#datepicker").datepicker();
 
     // Handle form submission
-    $("#contactForm").on("submit", function (e) {
+    $(".Form").on("submit", function (e) {
         e.preventDefault(); // Prevent form from submitting normally
 
         // Gather form data
@@ -84,25 +84,28 @@ $(document).ready(function () {
             message: $("#message").val(),
         };
 
-        // Send AJAX request to a placeholder external API
+        // AJAX request to an external API
         $.ajax({
-            url: "https://jsonplaceholder.typicode.com/posts", // Replace with your external API endpoint
-            type: "POST", // POST for sending data
+            url: "https://jsonplaceholder.typicode.com/posts", // Mock external API
+            type: "POST",
             data: JSON.stringify(formData),
             contentType: "application/json",
             success: function (response) {
-                // Update the page with the response
-                $("#responseMessage").html(
-                    `<p>Thank you, ${formData.name}. Your message was sent successfully!</p>
-                     <p>Response ID: ${response.id}</p>`
+                // Display success message on the page
+                $("main").append(
+                    `<div id="responseMessage">
+                        <p>Thank you, ${formData.name}. Your message was sent successfully!</p>
+                        <p>Response ID: ${response.id}</p>
+                    </div>`
                 );
             },
             error: function () {
-                // Handle errors
-                $("#responseMessage").html(
-                    "<p>There was an error sending your message. Please try again later.</p>"
+                // Display error message on the page
+                $("main").append(
+                    `<div id="responseMessage">
+                        <p>There was an error sending your message. Please try again later.</p>
+                    </div>`
                 );
             },
         });
     });
-});
