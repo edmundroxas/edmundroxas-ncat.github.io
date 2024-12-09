@@ -1,4 +1,4 @@
-//let $slideshow = $(".cycle-slideshow");
+let $slideshow = $(".cycle-slideshow");
 
 $slideshow.on("click", function() {
    if ($slideshow.is(".cycle-paused"))
