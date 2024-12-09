@@ -68,5 +68,41 @@ $(document).ready(function() {
     // Plain JavaScript click event handler for logo
     $('#logo').click(function() {
         alert('Logo clicked!');
+$(document).ready(function () {
+    // Add datepicker functionality
+    $("#datepicker").datepicker();
+
+    // Handle form submission
+    $("#contactForm").on("submit", function (e) {
+        e.preventDefault(); // Prevent form from submitting normally
+
+        // Gather form data
+        const formData = {
+            name: $("#name").val(),
+            email: $("#email").val(),
+            date: $("#datepicker").val(),
+            message: $("#message").val(),
+        };
+
+        // Send AJAX request to a placeholder external API
+        $.ajax({
+            url: "https://jsonplaceholder.typicode.com/posts", // Replace with your external API endpoint
+            type: "POST", // POST for sending data
+            data: JSON.stringify(formData),
+            contentType: "application/json",
+            success: function (response) {
+                // Update the page with the response
+                $("#responseMessage").html(
+                    `<p>Thank you, ${formData.name}. Your message was sent successfully!</p>
+                     <p>Response ID: ${response.id}</p>`
+                );
+            },
+            error: function () {
+                // Handle errors
+                $("#responseMessage").html(
+                    "<p>There was an error sending your message. Please try again later.</p>"
+                );
+            },
+        });
     });
 });
