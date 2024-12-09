@@ -78,6 +78,11 @@ main {
     margin: auto;
 }
 
+.slideshow > p {
+    text-align: center;
+    margin: auto;
+}
+
 /* cycle-slideshow styles -AC*/
 .cycle-slideshow {
     grid-area: slideshow;
@@ -87,7 +92,6 @@ main {
 .cycle-slideshow img {
     height: 250px;
     width: auto;
-    /*align-content: center;*/
     margin: auto;
 }
 
