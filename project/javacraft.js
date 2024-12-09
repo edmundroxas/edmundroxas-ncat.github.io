@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    console.log("javacraft.js is running");
+    console.log("javacraft.js is loaded");
 
     // Check if jQuery is available
     if (typeof $ === 'undefined') {
