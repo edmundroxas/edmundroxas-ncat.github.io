@@ -1,6 +1,13 @@
 $(document).ready(function() {
+    
+    var javacraftLoaded = true; //variable to show that this file has loaded
     console.log("javacraft.js is loaded");
-
+    // Check if javacraftLoaded variable is defined (meaning javacraft.js is loaded)
+    if (typeof javacraftLoaded !== 'undefined' && javacraftLoaded === true) {
+        console.log("javacraft.js is loaded successfully!");
+    } else {
+        console.error("javacraft.js is not loaded.");
+    }
     // Check if jQuery is available
     if (typeof $ === 'undefined') {
         console.error("jQuery is not loaded!");
