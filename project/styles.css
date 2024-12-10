@@ -101,7 +101,11 @@ main {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-areas:
-        "label field";
+        "labelName fieldName"
+        "labelEmail fieldEmail"
+        "labelDate fieldDate"
+        "labelMessage fieldMessage"
+        "submit submit";
 }
 
 .labelName {
