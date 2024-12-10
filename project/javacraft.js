@@ -72,6 +72,8 @@ $(document).ready(function () {
         alert('Logo clicked!');
     });
 
+    // Initialize datepicker (this is redundant but still fine)
+    $("#datepicker").datepicker();
 
     // Handle form submission
     $("#contactForm").on("submit", function (e) {
