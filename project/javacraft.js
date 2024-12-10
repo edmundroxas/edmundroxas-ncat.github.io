@@ -92,6 +92,7 @@ $(document).ready(function () {
             url: "https://formkeep.com/f/76e33a581a6f",
             type: "POST",
             data: formData,
+            console.log("Message sent successfully!");
             success: function () {
                 // Update the response message on success
                 $("#responseMessage").html(
