@@ -56,10 +56,16 @@
             <li><a href="https://www.instagram.com/YourJavaCraft" target="_blank">Instagram</a></li>
         </ul>
         <form class="form">
-            <label for="name" class="labelName">Name:</label>
-            <input type="text" id="name" name="name" required class="inputName">
-            <label for="email" class="labelEmail">Email:</label>
-            <input type="email" id="email" name="email" required class="inputEmail">
+        <form id="contactForm" action="https://formkeep.com/f/76e33a581a6f" accept-charset="UTF-8" enctype="multipart/form-data" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="date">Date:</label>
+            <input type="text" id="datepicker" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
             
             <!-- adding datepicker -AC -->
             <label for="datepicker" class="labelDate">Date:</label>
