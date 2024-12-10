@@ -95,8 +95,9 @@ $(document).ready(function () {
             success: function () {
                 // Update the response message on success
                 $("#responseMessage").html(
-                    `<p>Thank you, ${formData.name}. Your message has been successfully sent!</p>`
-                ).css("color", "black");
+                    "<p>Thank you, " + formData.name + ". Your message has been successfully sent!</p>"
+                    ).css("color", "black");
+
             },
             error: function () {
                 // Update the response message on error
