@@ -96,13 +96,13 @@ $(document).ready(function () {
                 // Update the response message on success
                 $("#responseMessage").html(
                     `<p>Thank you, ${formData.name}. Your message has been successfully sent!</p>`
-                ).css("color", "green");
+                ).css("color", "black");
             },
             error: function () {
                 // Update the response message on error
                 $("#responseMessage").html(
                     "<p>There was an error sending your message. Please try again later.</p>"
-                ).css("color", "red");
+                ).css("color", "black");
             },
         });
     });
