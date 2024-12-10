@@ -200,9 +200,8 @@ footer a {
     color: #007bff; /* Change color on hover */
 }
 #responseMessage {
-    display: block !important;
-    visibility: visible !important;
-    padding: 10px;
-    margin-top: 20px;
+    display: block; /* Make sure it's not display: none; */
+    margin-top: 10px;
 }
+
 
