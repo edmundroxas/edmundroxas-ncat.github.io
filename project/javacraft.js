@@ -72,40 +72,41 @@ $(document).ready(function () {
         alert('Logo clicked!');
     });
 
+$(document).ready(function () {
+    // Initialize the datepicker
+    $("#datepicker").datepicker();
+
     // Handle form submission
     $("#contactForm").on("submit", function (e) {
-        e.preventDefault(); // Prevent form from submitting normally
+        e.preventDefault(); // Prevent default form submission
 
         // Gather form data
-        const formData = {
-            name: $("#name").val(),
-            email: $("#email").val(),
-            date: $("#datepicker").val(),
-            message: $("#message").val(),
-        };
+        const formData = new FormData();
+        formData.append("name", $("#name").val());
+        formData.append("email", $("#email").val());
+        formData.append("date", $("#datepicker").val());
+        formData.append("message", $("#message").val());
 
-        // Send AJAX request to a placeholder external API
+        // Send AJAX POST request
         $.ajax({
-            url: "https://jsonplaceholder.typicode.com/posts", // Replace with your external API endpoint
-            type: "POST", // POST for sending data
-            data: JSON.stringify(formData),
-            contentType: "application/json",
-            success: function (response) {
-                // Update the page with the response
+            url: "https://formkeep.com/f/76e33a581a6f",
+            type: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function () {
+                // Update page with success message
                 $("#responseMessage").html(
-                    `<p>Thank you, ${formData.name}. Your message was sent successfully!</p>
-                     <p>Response ID: ${response.id}</p>`
+                    `<p>Thank you, ${$("#name").val()}. Your message has been sent successfully!</p>`
                 );
+                $("#contactForm")[0].reset(); // Clear the form
             },
             error: function () {
-                // Handle errors
+                // Update page with error message
                 $("#responseMessage").html(
-                    "<p>There was an error sending your message. Please try again later.</p>"
+                    `<p>There was an error sending your message. Please try again later.</p>`
                 );
             },
-            complete: function () {
-        console.log("Request complete");
-    }
         });
     });
-}); // Closing the initial $(document).ready()
+});
