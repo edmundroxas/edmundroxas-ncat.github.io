@@ -73,7 +73,7 @@ $(document).ready(function () {
     });
 
 $(document).ready(function () {
-    // Initialize the datepicker
+    // Initialize datepicker
     $("#datepicker").datepicker();
 
     // Handle form submission
@@ -81,31 +81,29 @@ $(document).ready(function () {
         e.preventDefault(); // Prevent default form submission
 
         // Gather form data
-        const formData = new FormData();
-        formData.append("name", $("#name").val());
-        formData.append("email", $("#email").val());
-        formData.append("date", $("#datepicker").val());
-        formData.append("message", $("#message").val());
+        const formData = {
+            name: $("#name").val(),
+            email: $("#email").val(),
+            date: $("#datepicker").val(),
+            message: $("#message").val(),
+        };
 
-        // Send AJAX POST request
+        // Send AJAX POST request to FormKeep
         $.ajax({
             url: "https://formkeep.com/f/76e33a581a6f",
             type: "POST",
             data: formData,
-            processData: false,
-            contentType: false,
             success: function () {
-                // Update page with success message
+                // Update the response message on success
                 $("#responseMessage").html(
-                    `<p>Thank you, ${$("#name").val()}. Your message has been sent successfully!</p>`
-                );
-                $("#contactForm")[0].reset(); // Clear the form
+                    `<p>Thank you, ${formData.name}. Your message has been successfully sent!</p>`
+                ).css("color", "green");
             },
             error: function () {
-                // Update page with error message
+                // Update the response message on error
                 $("#responseMessage").html(
-                    `<p>There was an error sending your message. Please try again later.</p>`
-                );
+                    "<p>There was an error sending your message. Please try again later.</p>"
+                ).css("color", "red");
             },
         });
     });
